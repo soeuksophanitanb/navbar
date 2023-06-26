@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Inter";
+}
+
+svg {
+  width: 24px;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper-navbar {
+  height: 70vh;
+  background-image: url(./car.jpg);
+  background-size: cover;
+  background-position: center;
+  /* backdrop-filter: blur(2px); */
+  position: relative;
+}
+
+.header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  backdrop-filter: blur(2px);
+}
+
+.logo a:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav a {
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a::after {
+  transition: all 0.3s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #ff4d30;
+  bottom: -6px;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a:hover {
+  color: #ff4d30;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sign-up a {
+  color: white;
+}
+
+.sign-up a:nth-child(2) {
+  padding: 12px 24px;
+  background-color: #ff4d30;
+  border-width: 0;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 1px 2px 8px #ff4d30;
+}
+
+.hero-info {
+  position: absolute;
+  /* background-color: #fff; */
+  backdrop-filter: blur(1px);
+  color: #fff;
+  top: 50%;
+  left: 10%;
+  padding: 32px;
+  transform: translate(0, -50%);
+  width: 50%;
+}
+
+.hero-des {
+  margin: 32px 0 12px;
+}
+
+.hero-info a {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-info span {
+  color: #ff4d30;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 46px;
+  font-weight: 900;
+  margin: 12px 0;
+}
+
+.wrapper-button {
+  margin-top: 24px;
+  display: flex;
+  gap: 22px;
+  font-weight: 700;
+}
+
+.wrapper-button a:nth-child(1) {
+  padding: 12px 24px;
+  background-color: #ff4d30;
+  border-radius: 4px;
+  box-shadow: 1px 2px 8px #ff4d30;
+}
+
+.wrapper-button a:nth-child(2) {
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: #000;
+  box-shadow: 1px 2px 12px #000;
+}
