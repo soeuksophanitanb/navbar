@@ -8,22 +8,22 @@
   font-family: "Inter";
 }
 
-svg {
-  width: 24px;
+.footer svg {
+  width: 14px;
   stroke-width: 2.5;
 }
 
 .footer {
   width: 100%;
   padding: 32px 0;
-  background-color: #a5b4fc;
+  /* background-color: #a5b4fc; */
 }
 
 .wrapper {
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 32px;
 }
 
@@ -31,4 +31,17 @@ svg {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.footer h3 {
+  margin-bottom: 12px;
+}
+
+.footer p {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-info {
+  font-size: 14px;
 }
