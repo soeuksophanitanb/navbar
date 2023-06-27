@@ -24,7 +24,14 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 32px;
+  gap: 12px;
+  padding: 12px;
+  border: 1px black dashed;
+}
+
+.wrapper > section {
+  border: 1px black dashed;
+  padding: 12px;
 }
 
 .contact-info {
