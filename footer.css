@@ -8,6 +8,10 @@
   font-family: "Inter";
 }
 
+body {
+  background-color: #f1f5f9;
+}
+
 .footer svg {
   width: 14px;
   stroke-width: 2.5;
@@ -51,4 +55,26 @@
 
 .contact-info {
   font-size: 14px;
+}
+
+.car-rental:nth-child(odd) {
+  background-color: #6366f1;
+  color: white;
+}
+
+.car-rental:nth-child(even) {
+  background-color: #111827;
+  color: white;
+}
+
+.car-rental {
+  transition: all 0.25s ease-in-out;
+}
+
+.car-rental:hover {
+  transform: scale(1.3) rotate(-25deg);
+}
+
+.car-rental:nth-child(even):hover {
+  transform: scale(1.3) rotate(25deg);
 }
